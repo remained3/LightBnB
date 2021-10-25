@@ -34,5 +34,6 @@ app.get("/test", (req, res) => {
   res.send("🤗");
 });
 
-const port = process.env.PORT || 3000; 
+const port = process.env.PORT || 3000;
+database.connect() 
 app.listen(port, (err) => console.log(err || `listening on port ${port} 😎`));
